@@ -1,6 +1,6 @@
 # N-Queens
-The n-queens problem is that of placing _n_ queens on an _n_ x _n_ chess board such that no queens can attack each other. 
-Queens can advance any number of spaces vertically, horizontally, or diagonally. As this problem has a lower bound of n=4, the following is the base example.
+Problem: The n-queens problem is that of placing _n_ queens on an _n_ x _n_ chess board such that no queens can attack each other. 
+Queens can advance any number of spaces vertically, horizontally, or diagonally. As this problem has a lower bound of _n_=4, the following is the base example.
 
 # Example
 <img align="left" src="https://user-images.githubusercontent.com/94331548/243140235-f6fd78a1-9571-482f-8b00-0b49689475a5.png">The first queen is placed in the first available position with no issue.
@@ -18,8 +18,11 @@ When attempting to place the last queen, we find that we must backtrack once aga
 
 <img align="left" src="https://user-images.githubusercontent.com/94331548/243141430-748c38f9-67bd-4492-b1b8-45999608a900.png">After shifting the first queen to the second column, the second queen must go in the last column of the second row.
 
-<img align="right" src="https://user-images.githubusercontent.com/94331548/243141474-ee34195e-a2cf-4c1e-96a8-f83e85db9315.png"><p align="right">The rest of the queens can be placed following this process with no issue. This is a valid solution for the N-Queens problem where n=4. No two queens are aligned vertically, horizontally, or diagonally.</p><br clear="right">
+<img align="right" src="https://user-images.githubusercontent.com/94331548/243141474-ee34195e-a2cf-4c1e-96a8-f83e85db9315.png"><p align="right">The rest of the queens can be placed following this process with no issue. This is a valid solution for the N-Queens problem where _n_=4. No two queens are aligned vertically, horizontally, or diagonally. Other solutions also exist, starting with the mirrored and rotated versions.</p><br clear="right">
 
-# Implementation
-The following is a brute-force backtracking approach to the n-queens problem. It utilizes a vector to store the column positions of each queen. <br>
-See it run: https://youtu.be/38OKWlAC8PE
+# Approach
+The following is a brute-force backtracking approach to the n-queens problem. It utilizes a vector to store the column positions of each queen.<br>
+See it run: https://youtu.be/38OKWlAC8PE<br>
+
+* _Time Complexity_: _O(N!)_
+* _Space Complexity_: _O(N)_
